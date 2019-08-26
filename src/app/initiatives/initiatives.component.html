@@ -1,0 +1,28 @@
+<!-- initiatives section -->
+<section class="initiatives">
+  <div class="initatives-title">
+    <div class="arrow-accent"></div>
+    <h1>We've Got Inititiative(s)</h1>
+  </div>
+  <div class="image-wrapper">
+    short and wide image here!
+    <img src="../assets/img/apple.jpeg" />
+  </div>
+  <!-- <div class="image-wrapper">
+    square image here!
+    <img src="../assets/img/apple.jpeg" />
+  </div> -->
+  <div class="initiatives-links">
+    <ul>
+      <li *ngFor="let initiative of initiatives">
+        <h2>
+          ▷<a>{{ initiative }}</a>
+        </h2>
+        <div class="inititaitves-pgraph">
+          Some text about each initiative will go here. Ideally it will be
+          fairly substantial.
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
