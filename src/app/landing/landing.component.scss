@@ -21,3 +21,53 @@
   float: right;
   padding-right: 0.3rem;
 }
+
+@include desktop {
+  // show specific html elements on the desktop version
+  .desktop-only {
+    display: inline-block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .landing {
+    height: 80vh;
+    //background-color: blue;
+  }
+
+  .landing-title {
+    z-index: 30;
+  }
+  h1 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 6rem;
+    padding-left: 5rem;
+    /* margin-top: 6rem; */
+    z-index: 30;
+    //position: absolute;
+
+    .landing-title-bottom {
+      margin-left: 5rem;
+    }
+  }
+  .landing-media {
+    display: flex;
+    margin-top: -5rem;
+    z-index: 0;
+  }
+
+  .image-wrapper-1 {
+    @include imageWrap(40vw, 50vh);
+    // height: 45vh;
+    // width: 40vw;
+  }
+
+  .landing-pgraph {
+    width: 30vw;
+    font-size: 3rem;
+  }
+}

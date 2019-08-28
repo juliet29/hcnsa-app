@@ -43,6 +43,11 @@ img {
   width: 100%;
 }
 
+// responsiveness
+.desktop-only {
+  display: none;
+}
+
 /************* Reset button, link, and list styles *************/
 button {
   padding: 0;
