@@ -41,6 +41,14 @@ img {
   left: 0;
   top: 0;
   width: 100%;
+  object-fit: cover;
+}
+
+.bg-img-div {
+  // for images that are set using the background property
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 // responsiveness
