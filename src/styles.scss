@@ -27,7 +27,9 @@ body {
   justify-content: center;
   background-color: $bodyColor;
   font-family: "Roboto", sans-serif;
-  color: darken($gray, 10%);
+  //color: darken($gray, 10%);
+  // default text color is white
+  color: white;
 }
 
 // probably not the best place for this -- depends on structure of app
@@ -42,6 +44,11 @@ img {
   top: 0;
   width: 100%;
   object-fit: cover;
+}
+
+.mobile-img {
+  width: 100vw;
+  height: 30vh;
 }
 
 .bg-img-div {

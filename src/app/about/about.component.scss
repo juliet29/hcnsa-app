@@ -2,15 +2,44 @@
 
 .about-pgraph {
   padding: 1.5rem;
-  color: $deepGreen;
   // font-variant: small-caps;
   font-weight: 100;
   text-align: left;
-  font-family: neue-haas-unica, sans-serif;
+  //font-family: neue-haas-unica, sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
 .NSA-text {
-  color: $deepGreen;
+  color: black;
+}
+
+/******************* styles for desktop ****************/
+@include desktop {
+  .about {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .about-img {
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+    left: 20vw;
+    top: 20vh;
+  }
+
+  .about-pgraph {
+    background-color: $deepGreen;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+
+    p {
+      width: 20vw;
+      margin-right: 5vw;
+    }
+  }
 }

@@ -18,3 +18,13 @@ input {
   @include trad-button($deepGreen);
   width: 6rem;
 }
+
+/******************* styles for desktop ****************/
+@include desktop {
+  .emailBanner {
+    margin: 0;
+    position: relative;
+    padding: 3rem 0.3rem;
+    font-size: larger;
+  }
+}
